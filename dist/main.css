@@ -1,0 +1,202 @@
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \********************************************************************************************************************************************************/
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'EXO2';
+  src: local("EXO-2.0_thin"), url(51c257bfa8ec3e0cfb4b.otf) format("woff2"), url(51c257bfa8ec3e0cfb4b.otf) format("woff"); }
+
+body {
+  background: url(7858f3d0f9b100e9018a.png) center center/cover repeat; }
+
+h1 {
+  display: block;
+  position: relative;
+  padding-top: 20px;
+  font-family: 'EXO2';
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 100;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 1px #000000; }
+
+.container {
+  display: block;
+  position: relative;
+  max-width: 1280px;
+  height: 640px;
+  margin: 0 auto;
+  margin-top: 120px; }
+
+.catalog-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.catalog-item {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 510px;
+  margin-bottom: 40px; }
+  .catalog-item__content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, transparent 5%, #1698D9 5%);
+    overflow: hidden;
+    cursor: url(54eca10f88e58d18bc5a.cur), auto; }
+    .catalog-item__content:before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      top: 4px;
+      bottom: 4px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, transparent 5%, white 5%); }
+    .catalog-item__content:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(83c44837451a8bdc6a4f.png) no-repeat;
+      width: 368px;
+      height: 280px;
+      bottom: -10px;
+      clip-path: polygon(1.4% 0%, 1.4% 94%, 1.6% 94.5%, 2% 94%, 2% 94%, 100% 94%, 100% 0%); }
+    .catalog-item__content_disabled:after {
+      opacity: 0.5;
+      cursor: default; }
+    .catalog-item__content_selected {
+      background: linear-gradient(135deg, transparent 5%, #D91667 5%); }
+      .catalog-item__content_selected:hover .catalog-item__headertext {
+        display: none; }
+      .catalog-item__content_selected:hover .catalog-item__headertext_hover {
+        display: block; }
+    .catalog-item__content_disabled {
+      cursor: default;
+      background: linear-gradient(135deg, transparent 5%, #adadad 5%); }
+  .catalog-item__headertext {
+    display: block;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666; }
+    .catalog-item__headertext_hover {
+      display: none;
+      position: relative;
+      padding-top: 20px;
+      padding-left: 50px;
+      font-family: 'Trebuchet MS';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #E62E7A; }
+  .catalog-item__title {
+    display: block;
+    position: relative;
+    padding-top: 4px;
+    padding-left: 50px;
+    left: -2px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000; }
+    .catalog-item__title_disabled {
+      opacity: 0.5;
+      color: #666; }
+  .catalog-item__subtitle {
+    display: block;
+    position: relative;
+    padding-top: 4px;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000; }
+    .catalog-item__subtitle_disabled {
+      opacity: 0.5;
+      color: #666; }
+  .catalog-item__text {
+    display: block;
+    position: relative;
+    padding-top: 12px;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666; }
+    .catalog-item__text span {
+      color: #fff; }
+    .catalog-item__text_disabled {
+      opacity: 0.5;
+      color: #666; }
+  .catalog-item__weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698D9;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5; }
+    .catalog-item__weight_selected {
+      background-color: #D91667; }
+    .catalog-item__weight_disabled {
+      background-color: #666666; }
+  .catalog-item__weight-amount {
+    display: block;
+    position: relative;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    color: #FFFFFF;
+    top: 6px; }
+  .catalog-item__weight-text {
+    display: block;
+    position: relative;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    top: 4px; }
+  .catalog-item__footer {
+    display: block;
+    position: relative;
+    margin-top: 16px;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: url(54eca10f88e58d18bc5a.cur), auto; }
+    .catalog-item__footer span {
+      color: #1698D9; }
+      .catalog-item__footer span:hover {
+        text-decoration: underline; }
+    .catalog-item__footer_disabled {
+      color: #FFFF66;
+      cursor: default; }
+
